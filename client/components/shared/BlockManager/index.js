@@ -19,6 +19,7 @@ import Maps from '../../blocks/Maps';
 import Icons from '../../blocks/Icons';
 import Cohort from '../../blocks/Cohorts';
 import Journey from '../../blocks/Journey';
+import Tabs from '../../blocks/Tabs';
 
 const getBlockComponent = ({ __component, ...rest }, index) => {
   let Block;
@@ -87,6 +88,9 @@ const getBlockComponent = ({ __component, ...rest }, index) => {
       break;
     case 'blocks.journey':
       Block = Journey;
+      break;
+    case 'blocks.tabs':
+      Block = Tabs;
       break;
   }
 

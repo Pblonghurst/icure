@@ -9,7 +9,7 @@
   "attributes": {
     "images": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -25,9 +25,50 @@
     "text": {
       "type": "string"
     },
-    "ifText": {
-      "type": "boolean",
-      "default": true
+    "btnText": {
+      "type": "string"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "featuredText": {
+      "type": "string"
+    },
+    "iconOne": {
+      "type": "string"
+    },
+    "iconImgOne": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "iconTwo": {
+      "type": "string"
+    },
+    "IconImgTwo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

@@ -1,14 +1,13 @@
-import delve from 'dlv';
 import styles from  '../../../styles/components/tabs.module.scss'
 
-const Tabs = ({image, text, title}) => {
+const Tabs = ({title}) => {
 
   return (
     <section className={styles.tabs}>
       <div className={styles.container}>
         <div className={styles.top}>
           <span>ICURe Customers</span>
-          <h2>Is ICURe right for you?</h2>
+          <h2>{title}</h2>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
           <button>How it Works</button>
         </div>
