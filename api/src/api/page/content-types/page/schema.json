@@ -56,7 +56,8 @@
         "blocks.media",
         "blocks.cohort",
         "blocks.journey",
-        "blocks.tabs"
+        "blocks.tabs",
+        "blocks.slider"
       ],
       "pluginOptions": {
         "i18n": {

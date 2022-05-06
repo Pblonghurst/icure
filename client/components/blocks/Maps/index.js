@@ -1,22 +1,21 @@
-import styles from  '../../../styles/components/maps.module.scss'
 import delve from 'dlv';
 import { getStrapiMedia } from '../../../utils';
 
 const Maps = ({ image }) => {
 
   return (
-    <section className={styles.maps}>
+    <section className="maps">
         <img
           src={getStrapiMedia(delve(image, "data.attributes.url"))}
           alt={delve(image, "data.attributes.alternativeText")}
           className="relative mx-auto shadow-lg rounded-lg w-auto"
       />
-      <div className={styles.container}>
-        <div className={styles.box}>   
+      <div className="container">
+        <div className="box">   
           {/* name */}
-            <div className={styles.boxbox}>
-              <div className={styles.circle}></div>
-              <div className={styles.text}>
+            <div className="boxbox">
+              <div className="circle"></div>
+              <div className="text">
                 <span>Return on Investment</span>
                 <h3>100K</h3>
               </div>

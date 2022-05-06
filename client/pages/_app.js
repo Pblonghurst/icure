@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import "tailwindcss/tailwind.css";
 import { getStrapiURL } from "../utils";
 import { getLocalizedParams } from "../utils/localize";
+import styles from  '../styles/styles.scss'
 
 const queryClient = new QueryClient();
 
@@ -15,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <QueryClientProvider client={queryClient}>
+      <QueryClientProvider className={styles} client={queryClient}>
         <Component {...pageProps} />
       </QueryClientProvider>
     </>

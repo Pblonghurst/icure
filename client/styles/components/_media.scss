@@ -1,18 +1,10 @@
 .media {
     padding: 100px 0;
     .container {
-        max-width: 1100px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
         flex-direction: column;
     }
     h2 {
         color: black; 
-        font-size: 50px;
         margin-bottom: 50px;
     }
     span {

@@ -28,8 +28,9 @@
         margin-top: 40px;
         font-weight: 600;
     }
+    // right
     .right {
-        width: 45%;
+        width: 50%;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -39,9 +40,26 @@
             background-color: #341B61;
         }
     }
+    // left
     .left {
-        width: 45%;
+        width: 50%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        button {
+            width: max-content;
+            margin: 26px 0 50px;
+        }
+        span {
+            width: 100%;
+            color: white;
+        }
+        .featured {
+            max-height: 68px;
+            object-fit: cover;
+            margin: 10px 0 0;
+            max-width: 500px;
+        }
         .box { 
             display: flex;
             position: absolute;
@@ -50,8 +68,9 @@
             width: 100%;
             .boxbox {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
-                max-width: 230px;
+                max-width: 240px;
                 .circle {
                     width: 75px;
                     height: 75px;
@@ -60,6 +79,7 @@
                 }
                 .text {
                     color: white;
+                    margin: 0 0 0 10px;
                     span {
                         font-size: 16px;
                     }

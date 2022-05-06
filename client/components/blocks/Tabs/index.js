@@ -1,31 +1,29 @@
-import styles from  '../../../styles/components/tabs.module.scss'
 
 const Tabs = ({title}) => {
 
   return (
-    <section className={styles.tabs}>
-      <div className={styles.container}>
-        <div className={styles.top}>
+    <section className="tabs">
+      <div className="container center">
+        <div className="tabs__top">
           <span>ICURe Customers</span>
           <h2>{title}</h2>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
-          <button>How it Works</button>
         </div>
 
-        <div className={styles.tab}>
+        <div className="tabs__tab">
           <div>
-            <span>tabs one</span>
+            <span className="active">tabs one</span>
             <span>tab two</span>
             <span>tab three</span>
           </div>
         </div>
 
-        <div className={styles.content}>
-          <div className={styles.left}>
+        <div className="tabs__content">
+          <div className="tabs__content__left">
             <h2>Is ICURe right for you?</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
           </div>     
-          <div className={styles.right}>
+          <div className="tabs__content__right">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg"
             />

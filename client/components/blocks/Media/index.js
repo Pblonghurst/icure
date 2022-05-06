@@ -1,12 +1,11 @@
 import delve from 'dlv';
 import { getStrapiMedia } from '../../../utils';
-import styles from  '../../../styles/components/media.module.scss'
 
 const Media = ({ image, title, subTitle }) => {
 
   return (
-    <section className={styles.media}>
-        <div className={styles.container}>
+    <section className="media">
+        <div className="container center">
             <span>{subTitle}</span>
             <h2>{title}</h2>
             <img

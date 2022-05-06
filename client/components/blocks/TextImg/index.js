@@ -1,4 +1,3 @@
-import styles from  '../../../styles/components/home.module.scss'
 
 const TextImg = ({  }) => {
 

@@ -1,10 +1,9 @@
-import styles from  '../../../styles/components/points.module.scss'
 
 const Points = ({ text }) => {
 
   return (
-    <section className={styles.points}>
-      <div className={styles.container}>
+    <section className="points">
+      <div className="container">
         <div>
             <span>Caption</span>
             <h2>Heading 2</h2>

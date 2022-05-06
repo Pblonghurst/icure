@@ -1,10 +1,9 @@
-import styles from  '../../../styles/components/Slider.module.scss'
 
 const Slider = ({ title, text }) => {
 
   return (
-    <section className={styles.Slider}>
-        <div className={styles.container}>
+    <section >
+        <div >
         </div>
     </section>
   );

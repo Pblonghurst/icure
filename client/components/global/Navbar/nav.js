@@ -1,10 +1,9 @@
 import delve from 'dlv';
 import Link from 'next/link';
-import styles from  '../../../styles/nav.module.scss'
 
 const Nav = ({ links, locale }) => {
   return (
-    <nav className={styles.nav__nav}>
+    <nav className="nav__nav">
       {links.map((link, index) => (
         <Link
           href={`${delve(link, 'href')}?lang=${locale || 'en'}`}

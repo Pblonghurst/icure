@@ -1,16 +1,16 @@
-import styles from  '../../../styles/components/icons.module.scss'
+
 
 const Icons = ({ text }) => {
 
   return (
-    <section className={styles.icons}>
-      <div className={styles.container}>
-        <div className={styles.title}>
+    <section className="icons">
+      <div className="container">
+        <div className="title">
           <span>How It Works</span>
           <h2>Your Journey starts with ICURe</h2>
         </div>
 
-        <div className={styles.icon}>
+        <div className="icon">
           <div></div>
           <h3>ICURe Main</h3>
           <span>Our Case Studies</span>
@@ -18,7 +18,7 @@ const Icons = ({ text }) => {
         </div>
 
         
-        <div className={styles.icon}>
+        <div className="icon">
           <div></div>
           <h3>ICURe Main</h3>
           <span>Our Case Studies</span>
@@ -26,7 +26,7 @@ const Icons = ({ text }) => {
         </div>
 
         
-        <div className={styles.icon}>
+        <div className="icon">
           <div></div>
           <h3>ICURe Main</h3>
           <span>Our Case Studies</span>
