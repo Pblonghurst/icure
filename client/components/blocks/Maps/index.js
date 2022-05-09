@@ -1,31 +1,37 @@
 import delve from 'dlv';
 import { getStrapiMedia } from '../../../utils';
 
-const Maps = ({ image }) => {
+const Maps = ({ image, caption, value, text, subTitle, title }) => {
 
   return (
     <section className="maps">
-        <img
-          src={getStrapiMedia(delve(image, "data.attributes.url"))}
-          alt={delve(image, "data.attributes.alternativeText")}
-          className="relative mx-auto shadow-lg rounded-lg w-auto"
-      />
-      <div className="container">
-        <div className="box">   
-          {/* name */}
-            <div className="boxbox">
-              <div className="circle"></div>
-              <div className="text">
-                <span>Return on Investment</span>
-                <h3>100K</h3>
+      <div className="maps__container__title container center">
+        <span>{subTitle}</span>
+        <h2>{title}</h2>
+      </div>
+      <div className="maps__container">
+        <div className="container">
+          <div className="maps__box">   
+            {/* name */}
+              <div className="maps__box__boxbox">
+                <img
+                  src={getStrapiMedia(delve(image, "data.attributes.url"))}
+                  alt={delve(image, "data.attributes.alternativeText")}
+                  className="maps__box__boxbox__circle"
+                />
+                <div className="maps__box__boxbox__text">
+                  <h3>{caption}</h3>
+                  <span>{value}</span>
+                </div>
               </div>
-            </div>
-          {/* text */}
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div> 
+            {/* text */}
+            <p>{text}</p>
+          </div>
+        </div> 
+      </div>
+      
     </section>
-  );
+  ); 
 };
 
 Maps.defaultProps = {};

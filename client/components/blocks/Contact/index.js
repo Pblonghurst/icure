@@ -1,5 +1,7 @@
+import delve from 'dlv';
+import { getStrapiMedia } from '../../../utils';
 
-const Contact = ({ text }) => {
+const Contact = ({ img }) => {
 
   return (
     <section className="contact">
@@ -25,7 +27,11 @@ const Contact = ({ text }) => {
             </div>
             {/* right */}
             <div className="contact__right">
-                <div className="square"></div>
+            <img
+              src={getStrapiMedia(delve(img, "data.attributes.url"))}
+              alt={delve(img, "data.attributes.alternativeText")}
+              className=""
+            />
             </div>
         </div>
     </section>

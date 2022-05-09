@@ -2,12 +2,19 @@
   "collectionName": "components_blocks_icons",
   "info": {
     "displayName": "Icons",
-    "icon": "align-left"
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "icons": {
+      "displayName": "icon",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon"
     }
   }
 }

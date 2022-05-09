@@ -6,7 +6,7 @@ const Hero = ({ images, header, text, btnText, featured, featuredText, iconOne, 
   console.log("heloo");
    return (
     <section className="hero">
-    <div className="container">
+    <div className="container sb">
 
       {/* left */}
       <div className="left">

@@ -57,7 +57,8 @@
         "blocks.cohort",
         "blocks.journey",
         "blocks.tabs",
-        "blocks.slider"
+        "blocks.slider",
+        "blocks.points"
       ],
       "pluginOptions": {
         "i18n": {

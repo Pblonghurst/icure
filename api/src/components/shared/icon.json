@@ -1,16 +1,13 @@
 {
-  "collectionName": "components_blocks_contacts",
+  "collectionName": "components_shared_icons",
   "info": {
-    "displayName": "Contact",
-    "icon": "angle-double-left",
+    "displayName": "icon",
+    "icon": "archive",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "img": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -20,6 +17,12 @@
         "videos",
         "audios"
       ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
     }
   }
 }

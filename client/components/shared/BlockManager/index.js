@@ -21,6 +21,7 @@ import Cohort from '../../blocks/Cohorts';
 import Journey from '../../blocks/Journey';
 import Tabs from '../../blocks/Tabs';
 import Slider from '../../blocks/Slider';
+import Points from '../../blocks/Points';
 
 const getBlockComponent = ({ __component, ...rest }, index) => {
   let Block;
@@ -95,6 +96,9 @@ const getBlockComponent = ({ __component, ...rest }, index) => {
       break;
     case 'blocks.slider':
       Block = Slider;
+      break;
+    case 'blocks.points':
+      Block = Points;
       break;
   }
 

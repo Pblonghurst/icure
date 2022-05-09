@@ -2,11 +2,35 @@
   "collectionName": "components_blocks_maps",
   "info": {
     "displayName": "Maps",
-    "icon": "air-freshener"
+    "icon": "air-freshener",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "caption": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "subTitle": {
       "type": "string"
     }
   }
