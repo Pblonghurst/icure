@@ -4,7 +4,6 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import { getStrapiMedia } from "../../../../utils";
 import Container from "../../../shared/Container";
-import styles from  '../../../../styles/blog.module.scss'
 
 const gfm = require("remark-gfm");
 
@@ -16,7 +15,7 @@ const ArticleContent = ({ attributes }) => {
   const locale = delve(attributes, "locale");
   return (
     <Container>
-      <section className={styles.blog}>
+      <section className="blog">
         <div className="container px-5 py-2 mx-auto flex flex-col justify-center items-center">
           <h1 className="font-black sm:text-5xl text-4xl  mb-4 text-gray-900 text-center">
             {title}

@@ -14,10 +14,10 @@ const Hero = ({ images, header, text, btnText, featured, featuredText, iconOne, 
         <p>{text}</p>
         <button>{btnText}</button>
         <span>{featuredText}</span>
-        <img
+        {/* <img
           src={getStrapiMedia(delve(images, "data.attributes.url"))}
           className="featured"
-        />
+        /> */}
 
         <div className="box">
           {/* circle one */}

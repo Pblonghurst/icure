@@ -58,7 +58,8 @@
         "blocks.journey",
         "blocks.tabs",
         "blocks.slider",
-        "blocks.points"
+        "blocks.points",
+        "blocks.text"
       ],
       "pluginOptions": {
         "i18n": {

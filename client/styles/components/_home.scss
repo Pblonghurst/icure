@@ -22,10 +22,13 @@
     }
     // right
     .right {
-        width: 50%;
+        width: 40%;
         align-items: center;
         justify-content: center;
         display: flex;
+        img {
+            max-width: 100%;
+        }
         .square {
             width: 100%;
             height: 483px;
@@ -54,7 +57,6 @@
         }
         .box { 
             display: flex;
-            position: absolute;
             bottom: 0;
             justify-content: space-between;
             width: 100%;
