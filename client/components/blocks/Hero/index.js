@@ -1,7 +1,7 @@
 import delve from 'dlv';
 import { getStrapiMedia } from '../../../utils';
 
-const Hero = ({ images, header, text, btnText, featured, featuredText, iconOne, iconImgOne, iconTwo, iconImgTwo }) => {
+const Hero = ({ header, text, btnText, featuredText, featured, imOne, imgTwo, images }) => {
   const title = delve(header, 'title');
   console.log("heloo");
    return (
@@ -9,35 +9,27 @@ const Hero = ({ images, header, text, btnText, featured, featuredText, iconOne, 
     <div className="container sb">
 
       {/* left */}
-      <div className="left">
+      <div className="hero__left">
         <h1>{title}</h1>
         <p>{text}</p>
         <button>{btnText}</button>
         <span>{featuredText}</span>
-        {/* <img
+        <img
           src={getStrapiMedia(delve(images, "data.attributes.url"))}
           className="featured"
-        /> */}
+        />
 
-        <div className="box">
-          {/* circle one */}
-          <div className="boxbox">
-            <div className="circle"></div>
-            <img
-              src={getStrapiMedia(delve(iconImgOne, "data.attributes.url"))}
-            />
-           <div className="text">
+        <div className="hero__left__box">
+          <div className="hero__left__box__boxbox">
+            <img />
+            <div className="hero__left__box__boxbox__text">
               <span>Projects Supported</span>
               <h3>300</h3>
             </div>
           </div>
-          {/* circle two */}
-          <div className="boxbox">
-            <div className="circle"></div>
-            <img
-              src={getStrapiMedia(delve(iconImgTwo, "data.attributes.url"))}
-            />
-            <div className="text">
+          <div className="hero__left__box__boxbox">
+            <img />
+            <div className="hero__left__box__boxbox__text">
               <span>Return on Investment</span>
               <h3>100K</h3>
             </div>
@@ -46,13 +38,10 @@ const Hero = ({ images, header, text, btnText, featured, featuredText, iconOne, 
       </div>
 
       {/* right */}
-      <div className="right">
+      <div className="hero__right">
         <img
-          src={getStrapiMedia(delve(images, "data.attributes.url"))}
+          src={getStrapiMedia(delve(featured, "data.attributes.url"))}
         />
-        <div className="square">
-
-        </div>
       </div>
 
     </div> 
