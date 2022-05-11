@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_blocks_sliders",
+  "collectionName": "components_blocks_slicks",
   "info": {
-    "displayName": "Slider",
-    "icon": "archway"
+    "displayName": "Slick",
+    "icon": "apple-alt"
   },
   "options": {},
   "attributes": {

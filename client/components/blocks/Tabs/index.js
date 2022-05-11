@@ -1,6 +1,5 @@
 
 const Tabs = ({title}) => {
-
   return (
     <section className="tabs">
       <div className="container center">
@@ -12,9 +11,9 @@ const Tabs = ({title}) => {
 
         <div className="tabs__tab">
           <div>
-            <span className="active">tabs one</span>
-            <span>tab two</span>
-            <span>tab three</span>
+            <span className="tabs__tab__item">tabs one</span>
+            <span className="tabs__tab__item">tab two</span>
+            <span className="tabs__tab__item">tab three</span>
           </div>
         </div>
 
@@ -33,6 +32,7 @@ const Tabs = ({title}) => {
       </div> 
     </section>
   );
+
 };
 
 Tabs.defaultProps = {};

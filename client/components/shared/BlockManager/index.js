@@ -20,9 +20,9 @@ import Icons from '../../blocks/Icons';
 import Cohort from '../../blocks/Cohorts';
 import Journey from '../../blocks/Journey';
 import Tabs from '../../blocks/Tabs';
-import Slider from '../../blocks/Slider';
 import Points from '../../blocks/Points';
 import Text from '../../blocks/Text';
+import Slick from '../../blocks/Slick';
 
 const getBlockComponent = ({ __component, ...rest }, index) => {
   let Block;
@@ -95,14 +95,14 @@ const getBlockComponent = ({ __component, ...rest }, index) => {
     case 'blocks.tabs':
       Block = Tabs;
       break;
-    case 'blocks.slider':
-      Block = Slider;
-      break;
     case 'blocks.points':
       Block = Points;
       break;
     case 'blocks.text':
       Block = Text;
+      break;    
+    case 'blocks.slick':
+      Block = Slick;
       break;
   }
 

@@ -2,6 +2,11 @@
     padding: 100px 0;
     &__right {
         width: 45%;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 170%;
+        }
     }
     &__left {
         width: 45%;

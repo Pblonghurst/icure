@@ -10,7 +10,7 @@
     "title": {
       "type": "string"
     },
-    "img": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,

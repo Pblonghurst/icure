@@ -86,8 +86,7 @@
         "blocks.tabs",
         "blocks.team",
         "blocks.testimonial",
-        "blocks.text-img",
-        "blocks.slider"
+        "blocks.text-img"
       ],
       "required": false
     },
