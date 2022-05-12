@@ -1,7 +1,7 @@
 import delve from 'dlv';
 import { getStrapiMedia } from '../../../utils';
 
-const Hero = ({ header, text, btnText, featuredText, featured, imOne, imgTwo, images }) => {
+const Hero = ({ header, text, btnText, featuredText, images, imageo, image}) => {
   const title = delve(header, 'title');
   console.log("heloo");
    return (
@@ -21,7 +21,9 @@ const Hero = ({ header, text, btnText, featuredText, featured, imOne, imgTwo, im
 
         <div className="hero__left__box">
           <div className="hero__left__box__boxbox">
-            <img />
+            <img
+              src={getStrapiMedia(delve(imageo, "data.attributes.url"))}
+            />
             <div className="hero__left__box__boxbox__text">
               <span>Projects Supported</span>
               <h3>300</h3>
@@ -29,6 +31,7 @@ const Hero = ({ header, text, btnText, featuredText, featured, imOne, imgTwo, im
           </div>
           <div className="hero__left__box__boxbox">
             <img />
+  
             <div className="hero__left__box__boxbox__text">
               <span>Return on Investment</span>
               <h3>100K</h3>
@@ -40,7 +43,7 @@ const Hero = ({ header, text, btnText, featuredText, featured, imOne, imgTwo, im
       {/* right */}
       <div className="hero__right">
         <img
-          src={getStrapiMedia(delve(featured, "data.attributes.url"))}
+          src={getStrapiMedia(delve(image, "data.attributes.url"))}
         />
       </div>
 

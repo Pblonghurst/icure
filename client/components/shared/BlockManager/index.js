@@ -23,6 +23,7 @@ import Tabs from '../../blocks/Tabs';
 import Points from '../../blocks/Points';
 import Text from '../../blocks/Text';
 import Slick from '../../blocks/Slick';
+import Clients from '../../blocks/Clients';
 
 const getBlockComponent = ({ __component, ...rest }, index) => {
   let Block;
@@ -103,6 +104,9 @@ const getBlockComponent = ({ __component, ...rest }, index) => {
       break;    
     case 'blocks.slick':
       Block = Slick;
+      break;
+    case 'blocks.clients':
+      Block = Clients;
       break;
   }
 

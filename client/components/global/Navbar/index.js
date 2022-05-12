@@ -1,7 +1,7 @@
 import delve from 'dlv';
 import Nav from './nav';
 
-const Navigation = ({ navigation, pageData, type }) => {
+const Navigation = ({ navigation, pageData, type, logo  }) => {
   return (
     <header className="nav">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">

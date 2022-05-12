@@ -13,10 +13,6 @@ const Cohort = ({ title, subTitle, date, places, btnText }) => {
             <div className="index">
               <span className="subTitle">{subTitle}Next cohort commences</span>
               <span className="date">{date}5 April 2022</span>
-              <span className="places">{places}12 places left</span>
-            </div>
-            {/* icon */}
-            <div className="icons">
             </div>
             {/* text */}
             <div className="text">
@@ -26,7 +22,6 @@ const Cohort = ({ title, subTitle, date, places, btnText }) => {
             {/* btn */}
             <div className="btn">
               <button>{btnText}Request More Details</button>
-              <p>or enroll today</p>
             </div>
           </div>
         </div> 

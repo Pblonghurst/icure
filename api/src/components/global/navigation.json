@@ -2,7 +2,8 @@
   "collectionName": "components_global_navigations",
   "info": {
     "displayName": "navigation",
-    "icon": "location-arrow"
+    "icon": "location-arrow",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -20,6 +21,16 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.link"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
