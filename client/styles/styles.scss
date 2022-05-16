@@ -22,7 +22,7 @@
 @import "components/clients";
 @import "components/quote";
 @import "components/basic";
-
+@import "components/tabs-alt";
 
 // fonts
 // h1, h2, h3, h4, h5, h6 {
@@ -69,6 +69,13 @@ input[type="submit"] {
     color: white;
     font-size: 18px;
     border-radius: 4px;
+    transition: ease 0.2s;
+    &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: $purple;
+        transition: ease 0.2s;
+    }
 }
 
 button {

@@ -6,9 +6,11 @@
         color: white;
     }
     &__nav {
-        margin-left: auto;
+        margin: auto;
+        transform: translateX(-72.5px);
         a {
             color: white !important;
+            margin: 40px !important;
         }
     }
 }

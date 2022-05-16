@@ -35,7 +35,6 @@ const getBlockComponent = ({ __component, ...rest }, index) => {
     case 'blocks.faq':
       Block = Faq;
       break;
-
     case 'blocks.hero':
       Block = Hero;
       break;
