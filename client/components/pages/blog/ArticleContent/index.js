@@ -16,23 +16,9 @@ const ArticleContent = ({ attributes }) => {
   return (
     <Container>
       <section className="blog">
-        <div className="container px-5 py-2 mx-auto flex flex-col justify-center items-center">
-          <h1 className="font-black sm:text-5xl text-4xl  mb-4 text-gray-900 text-center">
-            {title}
-            <h1>hello</h1>
-          </h1>
+        <div className="container">
 
-          <div className="lg:w-4/6 mx-auto mt-10">
-            <div className="shadow-lg rounded-lg overflow-hidden">
-              <img
-                alt={delve(image, "data.attributes.alternativeText")}
-                className="object-cover object-center h-full w-full"
-                src={getStrapiMedia(delve(image, "data.attributes.url"))}
-              />
-            </div>
-          </div>
-
-          <div className="markdown-body shadow-lg rounded-xl lg:w-3/6 w-full md:p-12 p-6 mt-2 bg-white">
+          {/* <div className="">
             <ReactMarkdown
               children={content}
               remarkPlugins={[gfm]}
@@ -43,7 +29,7 @@ const ArticleContent = ({ attributes }) => {
                 ),
               }}
             ></ReactMarkdown>
-          </div>
+          </div> */}
     
         </div>
       </section>

@@ -1,6 +1,6 @@
 .slick {
     @include padding;
-    background-color: $purple;
+    background: $gradient;
     color: white;
     &__slider {
         margin-left: auto;

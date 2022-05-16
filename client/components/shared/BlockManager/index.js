@@ -24,6 +24,9 @@ import Points from '../../blocks/Points';
 import Text from '../../blocks/Text';
 import Slick from '../../blocks/Slick';
 import Clients from '../../blocks/Clients';
+import Quote from '../../blocks/Quote';
+import Basic from '../../blocks/Basic';
+import TabsAlt from '../../blocks/TabsAlt';
 
 const getBlockComponent = ({ __component, ...rest }, index) => {
   let Block;
@@ -107,6 +110,15 @@ const getBlockComponent = ({ __component, ...rest }, index) => {
       break;
     case 'blocks.clients':
       Block = Clients;
+      break;
+    case 'blocks.quote':
+      Block = Quote;
+      break;
+    case 'blocks.basic':
+      Block = Basic;
+      break;
+    case 'blocks.tabs-alt':
+      Block = TabsAlt;
       break;
   }
 

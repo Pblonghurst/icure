@@ -59,8 +59,9 @@
         "blocks.tabs",
         "blocks.points",
         "blocks.text",
-        "blocks.slick",
-        "blocks.clients"
+        "blocks.slick", 
+        "blocks.clients",
+        "blocks.tabs-alt"
       ],
       "pluginOptions": {
         "i18n": {

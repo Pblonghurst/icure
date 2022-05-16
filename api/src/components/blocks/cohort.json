@@ -2,12 +2,19 @@
   "collectionName": "components_blocks_cohorts",
   "info": {
     "displayName": "Cohort",
-    "icon": "angry"
+    "icon": "angry",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "bars": {
+      "displayName": "bar",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bar"
     }
   }
 }

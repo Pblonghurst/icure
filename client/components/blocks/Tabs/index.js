@@ -1,16 +1,7 @@
 import { useState } from 'react';
-
+import React, { Component } from "react";
 
 const Tabs = ({title}) => {
-  function getInitialState(){
-    return {
-      selected:''
-    }
-  }
-
-  function isActive(){
-    return 'btn '+((value===this.state.selected) ?'active':'default');
-  }
 
   return (
     <section className="tabs">
@@ -24,15 +15,11 @@ const Tabs = ({title}) => {
         <div className="tabs__tab">
           <div>
             <span 
-              className={`tabs__tab__item`}
-           
-              >
+         >
               tabs one
             </span>
             <span 
-              className={`tabs__tab__item`}
-           
-              >
+         >
               tabs one
             </span>
             <span 

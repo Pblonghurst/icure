@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_wows",
+  "info": {
+    "displayName": "wow",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
